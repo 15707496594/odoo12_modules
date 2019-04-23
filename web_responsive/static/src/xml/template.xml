@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="FieldMany2One" t-extend="FieldMany2One">
+        <t t-jquery=".o_external_button" t-operation="replace">
+            <button type="button" t-if="!widget.nodeOptions.no_open" class="fa fa-share-square-o btn btn-default o_external_button" tabindex="-1" draggable="false"/>
+        </t>
+    </t>
+
+    <t t-name="web.datepicker" t-extend="web.datepicker">
+        <t t-jquery=".o_datepicker_button" t-operation="replace">
+            <span class="o_datepicker_button fa fa-calendar"/>
+        </t>
+    </t>
+</templates>
