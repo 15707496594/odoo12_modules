@@ -31,7 +31,7 @@
             }
 
             .o_menu_sections,
-            .o_menu_systray,
+            .o_menu_systray
             {
                 padding: 0;
             }
@@ -45,7 +45,7 @@
         // Hide big things
         .o_menu_brand,
         .o_menu_sections,
-        .oe_topbar_name,
+        .oe_topbar_name
         {
             display: none;
         }
@@ -74,7 +74,7 @@
 
             > li,
             .o_menu_entry_lvl_1,
-            .o_menu_header_lvl_1,
+            .o_menu_header_lvl_1
             {
                 // Homogeneous background color
                 background-color: $dropdown-bg;
@@ -203,6 +203,20 @@ a:hover {
             }
         }
     }
+    .o_form_statusbar {
+        .o_statusbar_status {
+            .o_arrow_button.btn-primary.disabled {
+                color: white;
+                background-color: #137ab7;
+            }
+            .o_arrow_button.disabled {
+                color: #4c4c4c;
+            }
+            .o_arrow_button.btn-primary.disabled:after {
+                border-left-color: #137ab7;
+            }
+        }
+    }
 }
 .o_list_view {
     thead {
@@ -242,13 +256,13 @@ a:hover {
 .o_required_modifier.o_input {
     border: 0;
     border-radius: 0;
-    border-bottom: 2px solid #acacac!important;
+    border-bottom: 1px solid #acacac!important;
 }
 .o_required_modifier {
     .o_input {
         border: 0;
         border-radius: 0;
-        border-bottom: 2px solid #acacac;
+        border-bottom: 1px solid #acacac;
     }
 }
 .o_field_widget.o_field_many2one {
@@ -257,7 +271,11 @@ a:hover {
         background-color: white;
     }
 }
+textarea.o_field_widget.o_field_text, .o_field_widget.oe_form_field_text .oe_form_text_content {
+    border: 1px solid #acacac;
+}
 .nav-tabs {
+    margin-bottom: 5px;
     .nav-link.active {
         border-color: #137ab7 #dee2e6 #ffffff;
         border-width: 2px 1px 0;
@@ -266,6 +284,28 @@ a:hover {
 }
 select.o_field_widget.o_input {
     min-height: 85%;
+}
+.input-group {
+    .form-control:not(:first-child), .custom-select:not(:first-child) {
+        border: 1px solid #ced4da;
+    }
+}
+.show {
+    .dropdown-menu {
+        .dropdown-header {
+            background-color: #137ab7;
+            color: white;
+        }
+    }
+}
+html {
+    .o_loading {
+        top: 46px;
+        right: 50%;
+        height: 27px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
 }
 /*---------------结束新增************/
 // Iconized full screen apps menu
@@ -370,7 +410,7 @@ html .o_web_client .o_main .o_main_content {
         .o_cp_buttons,
         .o_cp_left,
         .o_cp_right,
-        .o_cp_searchview,
+        .o_cp_searchview
         {
             flex: 1 1 100%;
             @include media-breakpoint-up(md) {
@@ -383,7 +423,7 @@ html .o_web_client .o_main .o_main_content {
         }
 
         .o_cp_searchview,
-        .o_cp_right,
+        .o_cp_right
         {
             flex-basis: 10%;
         }
@@ -479,7 +519,7 @@ html .o_web_client .o_main .o_main_content {
 
             // Avoid overflow on forms with title and/or button box
             .oe_button_box,
-            .oe_title,
+            .oe_title
             {
                 max-width: 100%;
             }
@@ -530,7 +570,7 @@ html .o_web_client .o_main .o_main_content {
 
             // Full width in form sheets
             .o_form_sheet,
-            .oe_chatter,
+            .oe_chatter
             {
                 min-width: auto;
                 max-width: 98%;
