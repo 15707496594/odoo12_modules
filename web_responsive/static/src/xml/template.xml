@@ -11,4 +11,10 @@
             <span class="o_datepicker_button fa fa-calendar"/>
         </t>
     </t>
+
+    <t t-name="AppsMenu" t-extend="AppsMenu">
+        <t t-jquery=".fa-th-large" t-operation="replace">
+            <i class="fa fa-lg fa-th"/>
+        </t>
+    </t>
 </templates>
