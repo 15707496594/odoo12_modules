@@ -217,6 +217,20 @@ a:hover {
             }
         }
     }
+    .o_group.o_inner_group {
+        tbody {
+            tr {
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .o_group {
+        .o_field_widget > .btn {
+            padding: 0 0;
+        }
+    }
 }
 .o_list_view {
     thead {
@@ -255,13 +269,13 @@ a:hover {
 }
 .o_required_modifier.o_input {
     border: 0;
-    border-radius: 0;
+    border-radius: 2px;
     border-bottom: 1px solid #acacac!important;
 }
 .o_required_modifier {
     .o_input {
         border: 0;
-        border-radius: 0;
+        border-radius: 2px;
         border-bottom: 1px solid #acacac;
     }
 }
